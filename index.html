@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Registration Form</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Inter", "Poppins", sans-serif;
+            }
+
+            body {
+                background-color: #f3f6fb;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+                color: #333;
+            }
+            header {
+                margin-top: 25px;
+                text-align: center;
+            }
+
+            header h1 {
+                color: #1e40af;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            main {
+                background: #ffffff;
+                border-radius: 12px;
+                padding: 30px 40px;
+                width: 90%;
+                max-width: 600px;
+                margin: 30px auto;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 12px 0;
+            }
+
+            td {
+                padding: 10px 5px;
+                vertical-align: middle;
+            }
+
+            label {
+                font-weight: 600;
+                color: #1e3a8a;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="tel"],
+            input[type="number"],
+            input[type="date"],
+            input[type="time"],
+            input[type="color"],
+            input[type="range"],
+            input[type="file"],
+            input[type="url"],
+            input[type="datetime-local"],
+            input[type="month"],
+            input[type="week"],
+            input[type="search"],
+            select {
+                width: 100%;
+                padding: 9px;
+                border: 1px solid #cbd5e1;
+                border-radius: 6px;
+                background-color: #f9fafb;
+                outline: none;
+                font-size: 0.95rem;
+                transition: 0.2s ease;
+            }
+            input:hover,
+            select:hover {
+                border-color: #60a5fa;
+            }
+
+            input:focus,
+            select:focus {
+                border-color: #1d4ed8;
+                box-shadow: 0 0 5px rgba(29, 78, 216, 0.2);
+            }
+            input[type="radio"],
+            input[type="checkbox"] {
+                accent-color: #1d4ed8;
+            }
+            input[type="image"] {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                border: 2px solid #1d4ed8;
+                margin-bottom: 15px;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            input[type="submit"] {
+                background-color: #1d4ed8;
+                color: #fff;
+            }
+
+            input[type="reset"] {
+                background-color: #e11d48;
+                color: #fff;
+                margin-top: 8px;
+            }
+            input[type="submit"]:hover {
+                background-color: #1e40af;
+                transform: translateY(-1px);
+            }
+
+            input[type="reset"]:hover {
+                background-color: #be123c;
+                transform: translateY(-1px);
+            }
+            footer {
+                text-align: center;
+                margin: 25px 0;
+                font-size: 0.9rem;
+                color: #64748b;
+            }
+            @media (max-width: 480px) {
+                main {
+                    padding: 20px;
+                }
+
+                td {
+                    display: block;
+                    width: 100%;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 4px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Student Information</h1>
+        </header>
+        <hr>
+        <main>
+            <div>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td><input type="image" src="./Registration_image.jpeg"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <input type="email">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Password">Password</label>
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Mobile Number">Mobile Number</label>
+                        </td>
+                        <td>
+                            <input type="tel">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="Male"> Male
+                            <input type="radio" name="gender" value="Female"> Female
+                        </td>
+                    </tr>
+
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="Dataofbirth">DOB</label>
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="time">Birth Time</label>
+                        </td>
+                        <td>
+                            <input type="time">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="color">Choose your favourite color</label>
+                        </td>
+                        <td>
+                            <input type="color" id="color">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="range">CGPA</label>
+                        </td>
+                        <td>
+                            <input type="range" min="0" max="100">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="file">Profile Picture</label>
+                        </td>
+                        <td>
+                            <input type="file" id="file">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="url">GitHub URL</label>
+                        </td>
+                        <td>
+                            <input type="url">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="datetime-local">Preferred Class Time</label>
+                        </td>
+                        <td>
+                            <input type="datetime-local">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="month">Which month yor're planning to finish</label>
+                        </td>
+                        <td>
+                            <input type="month">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="week">Select Week</label>
+                        </td>
+                        <td>
+                            <input type="week">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Course</td>
+                        <td>
+                            <select>
+                                <option value="">---Select---</option>
+                                <option>
+                                    .NET Fullstack
+                                </option>
+                                <option value="">
+                                    Java Fullstack
+                                </option>
+                                <option>
+                                    Python Fullstack
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <input type="hidden" value="STUDENT_ID_001">
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="courseSearch">Search Course</label>
+                        </td>
+                        <td>
+                            <input type="search">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <p> <input type="checkbox"> I agree the Terms & Conditions</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="reset" value="Reset Details">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <p>© 2025 Student Registration. All rights reserved.</p>
+        </footer>
+    </body>
+</center>
+
+</html>
